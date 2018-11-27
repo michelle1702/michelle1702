@@ -2,7 +2,7 @@
 <html>
 <head>
 	  <title> Michelle </title>
-  <button id="gioca">gioca</button>
+ <button id="gioca">gioca</button>
 </head>
 <script TYPE= "text/javascript">
 		  function io() {
@@ -15,9 +15,10 @@
         var x= Math.floor(Math.random()*15)+1
         document.getElementsByTagName("li")[x]. style.color="pink";
         
-        
          }
-	var giocaButton = document.getElementById("gioca");
+
+     
+    var giocaButton = document.getElementById("gioca");
   
     var onButtonClick = function() {
         giocaButton.textContent = "inizia";
@@ -27,6 +28,7 @@
 </script>
 <body>
  
+    
 <style>
 	   body {
 	    color:red;
@@ -65,13 +67,14 @@
       <li> romina </li>
     <li> gabriel </li>
       <li> leo </li>
-  
+
     </p>
 
 <form onsubmit = io()>
         <input type="text" id= "password" >
         <input type="submit" value="invia">
 	<input type="button" value="interrogato" onclick="int()">
+   
 </form>
 </body>
 
