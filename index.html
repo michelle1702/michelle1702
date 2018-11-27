@@ -2,7 +2,7 @@
 <html>
 <head>
 	  <title> Michelle </title>
- 
+  <button id="gioca">gioca</button>
 </head>
 <script TYPE= "text/javascript">
 		  function io() {
@@ -17,6 +17,13 @@
         
         
          }
+	var giocaButton = document.getElementById("gioca");
+  
+    var onButtonClick = function() {
+        giocaButton.textContent = "inizia";
+    };
+
+    giocaButton.addEventListener("click", onButtonClick);
 </script>
 <body>
  
