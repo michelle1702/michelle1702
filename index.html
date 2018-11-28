@@ -2,7 +2,8 @@
 <html>
 <head>
 	  <title> Michelle </title>
- <button id="gioca">gioca</button>
+ <button id="gioca">gioca</button> 
+ <img id="cuore"  src="http://www.laboratoriopesaro.com/wp-content/uploads/2017/03/Cuore-rosso.jpg"  width="105" height="100"/>
 </head>
 <script TYPE= "text/javascript">
 		  function io() {
@@ -16,15 +17,23 @@
         document.getElementsByTagName("li")[x]. style.color="pink";
         
          }
-
      
     var giocaButton = document.getElementById("gioca");
   
     var onButtonClick = function() {
         giocaButton.textContent = "inizia";
     };
-
     giocaButton.addEventListener("click", onButtonClick);
+    	    var cuoreImg = document.getElementById("cuore");
+  
+    var onImgClick = function() {
+      var x=Math.floor((Math.random()*300)+1) ;
+         var y=Math.floor((Math.random()*300)+1) ;
+         cuore.style.left=x+"px";
+         cuore.style.top=y+"px";
+    };
+
+    cuoreImg.addEventListener("mouseover", onImgClick);
 </script>
 <body>
  
@@ -44,6 +53,11 @@
 	.benvenuto {
 		color: pink;
 	}
+     #cuore {
+           position:absolute;
+		 
+      
+        }
 	  
 	 
 </style>
@@ -69,6 +83,7 @@
       <li> leo </li>
 
     </p>
+
 
 <form onsubmit = io()>
         <input type="text" id= "password" >
